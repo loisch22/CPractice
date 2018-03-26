@@ -1,0 +1,8 @@
+/Users/loischoi/Desktop/CPractice/myapp/bin/Debug/netcoreapp1.1/myapp.deps.json
+/Users/loischoi/Desktop/CPractice/myapp/bin/Debug/netcoreapp1.1/myapp.runtimeconfig.json
+/Users/loischoi/Desktop/CPractice/myapp/bin/Debug/netcoreapp1.1/myapp.runtimeconfig.dev.json
+/Users/loischoi/Desktop/CPractice/myapp/bin/Debug/netcoreapp1.1/myapp.dll
+/Users/loischoi/Desktop/CPractice/myapp/bin/Debug/netcoreapp1.1/myapp.pdb
+/Users/loischoi/Desktop/CPractice/myapp/obj/Debug/netcoreapp1.1/myapp.AssemblyInfo.cs
+/Users/loischoi/Desktop/CPractice/myapp/obj/Debug/netcoreapp1.1/myapp.dll
+/Users/loischoi/Desktop/CPractice/myapp/obj/Debug/netcoreapp1.1/myapp.pdb
