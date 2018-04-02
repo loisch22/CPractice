@@ -7,15 +7,15 @@ class Phonebook
 {
   Dictionary<string, string> phonebook = new Dictionary<string, string>();
 
-  static void Main()
+  public static void Main()
   {
     Console.WriteLine("MAIN MENU");
     Console.WriteLine("Would you like to add a person to your phonebook?");
     string answer = Console.ReadLine();
-    IsInputYes(answer);
+    AddContactYes(answer);
   }
 
-  static void IsInputYes(string answer) // better name
+  public static void AddContactYes(string answer) // better name
   {
     string answerLowerCase = answer.ToLower();
     if ("y".Equals(answerLowerCase)) 
@@ -28,18 +28,32 @@ class Phonebook
     }
   }
 
-  static void isYes(string answer) // better name
+  public static void AddContact()
   {
-    
-  } 
-
-  static void AddContact()
-  {
-    Console.WriteLine("Would you like to add a new contact?");
-
+    Console.WriteLine("ADD CONTACT");
+    Console.WriteLine("Enter contact name:");
+    string name = Console.ReadLine();
+    Console.WriteLine("Enter contact phone number:");
+    string number = Console.ReadLine();
+    ContactExists(name, number);
   }
 
-  static void LookUpContact()
+  public static void ContactExists(string name, string number)
+  {
+    if (phonebook.ContainsKey(name))
+    {
+      Console.WriteLine("This contact already exists and their number is: " + phonebook[name]);
+    }
+    else
+    {
+      phonebook.Add(name, number);
+      Console.WriteLine("Your new contact has been added.");
+    }
+  }
+
+
+
+  public static void LookUpContact()
   {
     Console.WriteLine("Would you like to look up a contact?");
     // if isYes is true then 
